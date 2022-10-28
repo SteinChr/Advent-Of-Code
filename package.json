@@ -1,0 +1,22 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SteinChr/Advent-Of-Code.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SteinChr/Advent-Of-Code/issues"
+  },
+  "homepage": "https://github.com/SteinChr/Advent-Of-Code#readme",
+  "devDependencies": {
+    "@types/node": "^18.8.5"
+  }
+}
