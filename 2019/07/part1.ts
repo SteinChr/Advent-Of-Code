@@ -12,8 +12,8 @@ for (let i = 0; i < phases.length; i++) {
     result = 0;
     for (let l = 0; l < 5; l++) {
         result = intcode(phases[i][l], result);
-        possibleResults.push(result);
     }
+    possibleResults.push(result);
 }
 
 result = Math.max(...possibleResults);
@@ -43,7 +43,6 @@ function intcode(phaseSetting, inputSignal) {
             parameter2 = numbers[counter + 2];
         }
 
-
         if (opcode == 1) {
             numbers[numbers[counter + 3]] = parameter1 + parameter2;
             counter += 4;
@@ -60,7 +59,7 @@ function intcode(phaseSetting, inputSignal) {
             inputCounter++;
         } else if (opcode == 4) {
             output = parameter1;
-            counter += 2;
+            break;
         } else if (opcode == 5) {
             if (parameter1 != 0) {
                 counter = parameter2;
@@ -91,7 +90,6 @@ function intcode(phaseSetting, inputSignal) {
             break;
         }
     }
-
     return output;
 }
 
