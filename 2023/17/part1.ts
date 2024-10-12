@@ -20,7 +20,7 @@ let visitedPositions = new Map<string, string>();
 visitedPositions.set(getStringFromPosition(positionsToCheck[0]), '0_0');
 visitedPositions.set(getStringFromPosition(positionsToCheck[1]), '0_0');
 
-for (let p = 0; positionsToCheck.length != 0; p++) {
+while (positionsToCheck.length != 0) {
     let currentPosition: Position;
 
     positionsToCheck.sort(sort);

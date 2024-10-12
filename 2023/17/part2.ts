@@ -20,7 +20,7 @@ let visitedPositions = new Map<string, number>();
 visitedPositions.set(getStringFromPosition(positionsToCheck[0]), positionsToCheck[0].heatLoss);
 visitedPositions.set(getStringFromPosition(positionsToCheck[1]), positionsToCheck[1].heatLoss);
 
-for (let p = 0; positionsToCheck.length != 0; p++) {
+while (positionsToCheck.length != 0) {
     let currentPosition: Position;
 
     positionsToCheck.sort(sort);
